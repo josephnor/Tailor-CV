@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Angular build output
+frontend/dist/
+frontend/.angular/
+
+# Temporary files
+.DS_Store
+
+# Local data files
+backend/data/cvs/*.json
+backend/data/users.json

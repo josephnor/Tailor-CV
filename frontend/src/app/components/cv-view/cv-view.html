@@ -1,0 +1,325 @@
+<!-- SVG Sprite from cv2.html -->
+<svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="cv2-icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.29-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </symbol>
+    <symbol id="cv2-icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
+    </symbol>
+    <symbol id="cv2-icon-mappin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" />
+        <circle cx="12" cy="10" r="3" />
+    </symbol>
+    <symbol id="cv2-icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+        <rect x="2" y="9" width="4" height="12" />
+        <circle cx="4" cy="4" r="2" />
+    </symbol>
+    <symbol id="cv2-icon-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+    </symbol>
+    <symbol id="cv2-icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+    </symbol>
+</svg>
+
+<div *ngIf="loading" class="min-h-screen bg-slate-50 py-10 px-4 md:px-0">
+    <div class="max-w-[896px] mx-auto bg-white shadow-xl rounded-2xl overflow-hidden animate-pulse flex flex-col md:flex-row min-h-[800px]">
+        <!-- Skeleton Sidebar -->
+        <div class="w-full md:w-1/3 bg-slate-800 p-8 flex flex-col gap-8">
+            <div class="flex flex-col items-center gap-6">
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-700"></div>
+                <div class="w-3/4 h-8 bg-slate-700 rounded mt-2"></div>
+                <div class="w-1/2 h-4 bg-slate-700 rounded"></div>
+            </div>
+            <div class="space-y-4 mt-8">
+                <div class="w-full h-4 bg-slate-700 rounded"></div>
+                <div class="w-5/6 h-4 bg-slate-700 rounded"></div>
+                <div class="w-4/6 h-4 bg-slate-700 rounded"></div>
+            </div>
+        </div>
+        <!-- Skeleton Main Content -->
+        <div class="w-full md:w-2/3 p-8 md:p-12 flex flex-col gap-10">
+            <div class="space-y-4">
+                <div class="w-1/3 h-6 bg-slate-200 rounded mb-6"></div>
+                <div class="w-full h-4 bg-slate-200 rounded"></div>
+                <div class="w-full h-4 bg-slate-200 rounded"></div>
+                <div class="w-3/4 h-4 bg-slate-200 rounded"></div>
+            </div>
+            <div class="space-y-6 mt-8">
+                <div class="w-1/3 h-6 bg-slate-200 rounded mb-6"></div>
+                <div class="w-full h-24 bg-slate-100 rounded"></div>
+                <div class="w-full h-24 bg-slate-100 rounded"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="data"
+    class="min-h-screen mesh-gradient py-10 px-4 md:px-0 font-sans text-slate-900 cv-page print:bg-white print:p-0">
+    <div class="max-w-[896px] mx-auto print:max-w-full cv-card-glow">
+
+        <!-- Premium Header -->
+        <header class="text-center mb-12 animate-fade-in-up print:hidden">
+            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-red-600 mb-2">Jose Barrios Interactive
+                Portfolio</h2>
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter text-gradient-premium">
+                CURRICULUM <span class="text-red-600">2026</span>
+            </h1>
+            <div class="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full shadow-[0_0_15px_rgba(220,38,38,0.5)]"></div>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="flex flex-wrap justify-end mb-4 print:hidden gap-3">
+            <a routerLink="/dashboard"
+                class="inline-flex items-center gap-2 bg-white text-slate-800 border border-slate-200 px-4 py-2 rounded-lg text-sm font-bold shadow-sm hover:bg-slate-50 transition active:scale-95">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                Dashboard
+            </a>
+
+            <ng-container *ngIf="authService.isLoggedIn && authService.currentUsername === viewingUsername">
+                <a routerLink="/admin/{{data.cvId}}"
+                    class="inline-flex items-center gap-2 bg-slate-800 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-md hover:bg-slate-700 transition active:scale-95">
+                    Edit CV
+                </a>
+                <button (click)="logout()"
+                    class="inline-flex items-center gap-2 bg-slate-800 text-slate-300 px-4 py-2 rounded-lg text-sm font-bold shadow-md hover:bg-slate-700 hover:text-white transition">
+                    Logout
+                </button>
+            </ng-container>
+            <a *ngIf="!authService.isLoggedIn" routerLink="/login"
+                class="inline-flex items-center gap-2 bg-slate-800 text-slate-300 px-4 py-2 rounded-lg text-sm font-bold shadow-md hover:bg-slate-700 hover:text-white transition">
+                Login / Create
+            </a>
+
+            <button (click)="printPdf()"
+                class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-md hover:bg-red-700 transition">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Export to PDF
+            </button>
+        </div>
+
+        <!-- CV Root -->
+        <div
+            class="cv-root-container flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl overflow-hidden print:shadow-none print:rounded-none print:flex-row">
+
+            <!-- Sidebar -->
+            <aside
+                class="w-full md:w-1/3 bg-slate-900 text-white p-8 flex flex-col gap-8 print:w-1/3 print:bg-slate-900 print:text-white"
+                style="-webkit-print-color-adjust: exact; print-color-adjust: exact;">
+
+                <!-- Photo + Name -->
+                <div class="flex flex-col items-center gap-6">
+                    <div
+                        class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-red-600 overflow-hidden bg-slate-800 flex-shrink-0 shadow-2xl">
+                        <img [src]="data.profile.photoPath" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h1 class="text-3xl font-bold leading-tight uppercase text-white">
+                            {{ data.profile.firstName }}<br>
+                            <span class="text-red-600">{{ data.profile.lastName }}</span>
+                        </h1>
+                        <p class="text-slate-400 mt-2 font-medium tracking-wide text-sm">{{ data.profile.subtitle }}
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <section>
+                    <h2
+                        class="text-xs font-bold uppercase tracking-widest border-b border-slate-800 pb-2 text-red-500 mb-4">
+                        Contact</h2>
+                    <ul class="flex flex-col gap-3 text-sm">
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-phone" />
+                            </svg>
+                            {{ data.contact.phone }}
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-mail" />
+                            </svg>
+                            {{ data.contact.email }}
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-mappin" />
+                            </svg>
+                            {{ data.contact.location }}
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-linkedin" />
+                            </svg>
+                            <a [href]="data.contact.linkedinUrl" target="_blank" class="hover:underline">{{
+                                data.contact.linkedin }}</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Skills -->
+                <section>
+                    <h2
+                        class="text-xs font-bold uppercase tracking-widest border-b border-slate-800 pb-2 text-red-500 mb-4">
+                        Top Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span *ngFor="let s of data.skills"
+                            class="bg-[#1f2937] border border-[#374151] px-[0.6rem] py-1 rounded text-xs text-[#9ca3af] transition-all duration-200 hover:border-red-600 hover:text-white hover:-translate-y-[1px] cursor-default">{{
+                            s }}</span>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section>
+                    <h2
+                        class="text-xs font-bold uppercase tracking-widest border-b border-slate-800 pb-2 text-red-500 mb-4">
+                        Languages</h2>
+                    <div class="flex flex-col gap-3">
+                        <div *ngFor="let l of data.languages">
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>{{ l.name }}</span>
+                                <span class="text-red-500 font-bold">{{ l.level }}</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                                <div class="bg-red-600 h-full rounded-full" [style.width.%]="l.percentage"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quote -->
+                <div
+                    class="bg-slate-800 p-4 rounded border-l-4 border-red-600 italic text-sm text-slate-400 leading-relaxed mt-auto">
+                    "{{ data.profile.quote }}"
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="main-content-area w-full md:w-2/3 p-8 md:p-12 flex flex-col gap-10 print:w-2/3 bg-white">
+
+                <!-- Profile -->
+                <section>
+                    <h2
+                        class="text-lg font-bold text-slate-900 uppercase tracking-widest border-l-4 border-red-600 pl-3 mb-6">
+                        Professional Profile</h2>
+                    <p class="text-slate-600 leading-loose text-sm" [innerHTML]="data.profile.summary"></p>
+                </section>
+
+                <!-- Experience -->
+                <section>
+                    <h2
+                        class="text-lg font-bold text-slate-900 uppercase tracking-widest border-l-4 border-red-600 pl-3 mb-6">
+                        Experience</h2>
+                    <div class="experience-list relative pl-6 border-l border-slate-200 flex flex-col gap-8">
+                        <article *ngFor="let exp of data.experience" class="relative">
+                            <div class="absolute w-3 h-3 bg-red-600 rounded-full -left-[1.89rem] top-1 print:bg-red-600 border-2 border-white"
+                                style="-webkit-print-color-adjust: exact; print-color-adjust: exact;"></div>
+                            <div class="flex flex-col md:flex-row justify-between items-start gap-1 mb-2">
+                                <h3 class="font-bold text-slate-900 text-[15px]">{{ exp.role }}</h3>
+                                <time
+                                    class="text-xs font-bold text-red-800 uppercase tracking-wide bg-red-50 px-2 py-0.5 rounded whitespace-nowrap">{{
+                                    exp.period }}</time>
+                            </div>
+                            <p class="text-slate-400 text-xs italic mb-3">{{ exp.subtitle }}</p>
+                            <ul class="flex flex-col gap-2">
+                                <li *ngFor="let bullet of exp.achievements"
+                                    class="flex items-start gap-2 text-sm text-slate-600 leading-relaxed">
+                                    <svg width="14" height="14" class="text-red-600 mt-1 flex-shrink-0"
+                                        aria-hidden="true" focusable="false">
+                                        <use href="#cv2-icon-check" />
+                                    </svg>
+                                    <span [innerHTML]="bullet | markdown"></span>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h2
+                        class="text-lg font-bold text-slate-900 uppercase tracking-widest border-l-4 border-red-600 pl-3 mb-6">
+                        Education</h2>
+                    <div class="flex flex-col gap-6">
+                        <article *ngFor="let edu of data.education" class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-9 h-9 bg-red-50 text-red-600 rounded-md flex items-center justify-center transition hover:bg-red-600 hover:text-white">
+                                <svg width="18" height="18" aria-hidden="true" focusable="false">
+                                    <use href="#cv2-icon-grad" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">{{ edu.degree }}</h3>
+                                <p class="text-sm text-slate-600 mt-0.5">{{ edu.institution }} | {{ edu.period }}</p>
+                                <p class="text-[11px] font-bold mt-1 uppercase tracking-wide"
+                                    [ngClass]="{'text-red-800': edu.noteType === 'red', 'text-slate-400': edu.noteType === 'muted'}">
+                                    {{ edu.note }}</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Core Values & Certifications (Bottom Grid) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 print:grid-cols-2 mt-2">
+                    <!-- Core Values -->
+                    <section>
+                        <h2
+                            class="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-1 mb-3">
+                            Core Values</h2>
+                        <ul class="flex flex-col gap-2 text-xs text-slate-600">
+                            <li *ngFor="let val of data.coreValues" class="flex items-center gap-2">
+                                <div class="w-1.5 h-1.5 bg-red-600 rounded-full print:bg-red-600"
+                                    style="-webkit-print-color-adjust: exact; print-color-adjust: exact;"></div>
+                                {{ val }}
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Certifications -->
+                    <section>
+                        <h2
+                            class="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-1 mb-3">
+                            Certifications</h2>
+                        <ul class="flex flex-col gap-2 text-xs text-slate-600">
+                            <li *ngFor="let cert of data.certifications" [innerHTML]="cert | markdown"
+                                class="pl-2 relative before:content-['•'] before:absolute before:-left-1 before:text-slate-400">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer
+            class="cv2-footer no-print print:hidden text-center text-[10px] uppercase font-bold text-slate-400 mt-6 tracking-[0.2em]">
+            Jose Sebastian Barrios Cardozo · 2026
+        </footer>
+
+    </div>
+</div>

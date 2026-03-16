@@ -1,0 +1,66 @@
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    :host {
+        display: block;
+        background: white;
+    }
+
+    /* Compress main container */
+    .cv-page {
+        padding: 0 !important;
+        background: white !important;
+    }
+
+    /* Force 100% height of A4 */
+    .cv-root-container {
+        height: 297mm !important;
+        max-height: 297mm !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+    }
+
+    /* Column widths */
+    aside {
+        width: 33.33% !important;
+        min-width: 33.33% !important;
+        padding: 1rem !important;
+        gap: 1.5rem !important;
+    }
+
+    .main-content-area {
+        width: 66.66% !important;
+        min-width: 66.66% !important;
+        padding: 1.5rem !important;
+        gap: 1.5rem !important;
+        overflow: visible !important;
+    }
+
+    /* Text & Gap compression */
+    section {
+        margin-bottom: 0 !important;
+    }
+
+    h2 {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .experience-list {
+        gap: 1rem !important;
+    }
+
+    p,
+    li,
+    span {
+        line-height: normal !important;
+    }
+
+    /* Hide admin UI */
+    .no-print {
+        display: none !important;
+    }
+}

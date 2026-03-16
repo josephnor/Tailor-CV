@@ -1,0 +1,38 @@
+service: mi-cv-backend
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+  stage: dev
+  memorySize: 256
+  timeout: 15
+  environment:
+    JWT_SECRET: ${env:JWT_SECRET}
+    GEMINI_API_KEY: ${env:GEMINI_API_KEY}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+            - dynamodb:Query
+            - dynamodb:Scan
+          Resource:
+            - arn:aws:dynamodb:us-east-1:*:table/cv_users
+            - arn:aws:dynamodb:us-east-1:*:table/cv_data_v2
+        - Effect: Allow
+          Action:
+            - s3:PutObject
+            - s3:GetObject
+          Resource:
+            - arn:aws:s3:::mi-cv-data-867344442987/*
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi: '*'

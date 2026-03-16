@@ -1,0 +1,3192 @@
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 164.76 kB | 
+styles.css          | styles        |  42.24 kB | 
+
+                    | Initial total | 207.00 kB
+
+Application bundle generation complete. [0.732 seconds] - 2026-03-04T04:35:22.831Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.78.221:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 165.43 kB | 
+
+Application bundle generation complete. [0.456 seconds] - 2026-03-04T05:39:56.759Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 167.05 kB | 
+styles.css          | styles        |  42.44 kB | 
+
+                    | Initial total | 209.49 kB
+
+Application bundle generation complete. [0.182 seconds] - 2026-03-04T05:40:09.291Z
+
+Stylesheet update sent to client(s).
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 167.16 kB | 
+
+Application bundle generation complete. [0.214 seconds] - 2026-03-04T05:40:56.197Z
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 168.13 kB | 
+
+Application bundle generation complete. [0.120 seconds] - 2026-03-04T05:40:58.127Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:97:42:
+[37m      97 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" c...
+         ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:101:37:
+[37m      101 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:102:64:
+[37m      102 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:104:98:
+[37m      104 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:120:37:
+[37m      120 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:127:37:
+[37m      127 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:134:37:
+[37m      134 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:141:45:
+[37m      141 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:142:38:
+[37m      142 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:153:53:
+[37m      153 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:165:52:
+[37m      165 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:180:30:
+[37m      180 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:192:87:
+[37m      192 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:201:58:
+[37m      201 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:231:58:
+[37m      231 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:257:57:
+[37m      257 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:271:58:
+[37m      271 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 169.41 kB | 
+styles.css          | styles        |  44.06 kB | 
+
+                    | Initial total | 213.48 kB
+
+Application bundle generation complete. [0.326 seconds] - 2026-03-04T05:54:27.847Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:97:42:
+[37m      97 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" c...
+         ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:101:37:
+[37m      101 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:102:64:
+[37m      102 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:104:98:
+[37m      104 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:120:37:
+[37m      120 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:127:37:
+[37m      127 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:134:37:
+[37m      134 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:141:45:
+[37m      141 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:142:38:
+[37m      142 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:153:53:
+[37m      153 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:165:52:
+[37m      165 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:180:30:
+[37m      180 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:192:87:
+[37m      192 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:201:58:
+[37m      201 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:231:58:
+[37m      231 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:257:57:
+[37m      257 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:271:58:
+[37m      271 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Stylesheet update sent to client(s).
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.216 seconds] - 2026-03-04T05:54:29.725Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...           <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mid[37m}}"
+         ╵                                                                 [32m~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'id' does not exist on type 'CvData'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...           <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mid[37m}}"
+         ╵                                                                 [32m~~[0m
+
+  Error occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 171.24 kB | 
+styles.css          | styles        |  44.18 kB | 
+
+                    | Initial total | 215.41 kB
+
+Application bundle generation complete. [0.270 seconds] - 2026-03-04T06:03:01.482Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 171.23 kB | 
+
+Application bundle generation complete. [0.175 seconds] - 2026-03-04T06:20:01.583Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 171.23 kB | 
+
+Application bundle generation complete. [0.093 seconds] - 2026-03-04T06:20:07.873Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 171.23 kB | 
+
+Application bundle generation complete. [0.094 seconds] - 2026-03-04T06:20:16.047Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 171.23 kB | 
+
+Application bundle generation complete. [0.120 seconds] - 2026-03-04T06:23:13.951Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 171.15 kB | 
+
+Application bundle generation complete. [0.113 seconds] - 2026-03-04T06:23:40.247Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 171.15 kB | 
+styles.css          | styles        |  44.18 kB | 
+
+                    | Initial total | 215.33 kB
+
+Application bundle generation complete. [0.118 seconds] - 2026-03-04T06:23:54.938Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 171.09 kB | 
+
+Application bundle generation complete. [0.108 seconds] - 2026-03-04T23:21:45.359Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 171.07 kB | 
+
+Application bundle generation complete. [0.092 seconds] - 2026-03-04T23:23:08.147Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 171.07 kB | 
+styles.css          | styles        |  44.18 kB | 
+
+                    | Initial total | 215.25 kB
+
+Application bundle generation complete. [0.261 seconds] - 2026-03-07T02:46:13.125Z
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:68:66:
+[37m      68 │ ...         <a routerLink="/admin/{{viewingUsername}}/{{data?.[32mcvId[37m}}"
+         ╵                                                               [32m~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:107:42:
+[37m      107 │ ...          <img [src]="data?.[32mprofile[37m?.photoPath" alt="Profile" ...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:111:37:
+[37m      111 │                             {{ data?.[32mprofile[37m?.firstName }}<br>
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:112:64:
+[37m      112 │ ...  <span class="text-red-600">{{ data?.[32mprofile[37m?.lastName }}</span>
+          ╵                                          [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:114:98:
+[37m      114 │ ... font-medium tracking-wide text-sm">{{ data?.[32mprofile[37m?.subtitle }}
+          ╵                                                 [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:130:37:
+[37m      130 │                             {{ data?.[32mcontact[37m?.phone }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:137:37:
+[37m      137 │                             {{ data?.[32mcontact[37m?.email }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:144:37:
+[37m      144 │                             {{ data?.[32mcontact[37m?.location }}
+          ╵                                      [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:151:45:
+[37m      151 │ ...           <a [href]="data?.[32mcontact[37m?.linkedinUrl" target="_bla...
+          ╵                                [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:152:38:
+[37m      152 │                                 data?.[32mcontact[37m?.linkedin }}</a>
+          ╵                                       [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:163:53:
+[37m      163 │                         <span *ngFor="let s of data?.[32mskills[37m"
+          ╵                                                      [32m~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:175:52:
+[37m      175 │                         <div *ngFor="let l of data?.[32mlanguages[37m">
+          ╵                                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:190:30:
+[37m      190 │                     "{{ data?.[32mprofile[37m?.quote }}"
+          ╵                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:202:87:
+[37m      202 │ ... leading-loose text-sm" [innerHTML]="data?.[32mprofile[37m?.summary"></p>
+          ╵                                               [32m~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:211:58:
+[37m      211 │ ...  <article *ngFor="let exp of data?.[32mexperience[37m" class="relative">
+          ╵                                        [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:241:58:
+[37m      241 │ ...e *ngFor="let edu of data?.[32meducation[37m" class="flex items-start ...
+          ╵                               [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:267:57:
+[37m      267 │ ... *ngFor="let val of data?.[32mcoreValues[37m" class="flex items-center...
+          ╵                              [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/cv-view/cv-view.html:281:58:
+[37m      281 │ ...gFor="let cert of data?.[32mcertifications[37m" [innerHTML]="cert | ma...
+          ╵                            [32m~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component CvView.
+
+    src/app/components/cv-view/cv-view.ts:12:15:
+[37m      12 │   templateUrl: [32m'./cv-view.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
