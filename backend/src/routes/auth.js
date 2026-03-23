@@ -1,3 +1,10 @@
+const express = require('express');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const { GetCommand, PutCommand } = require('@aws-sdk/lib-dynamodb');
+const { docClient } = require('../services/aws');
+const { asyncHandler } = require('../utils/asyncHandler');
+const { JWT_SECRET, CV_TABLE } = require('../config');
 const { z } = require('zod');
 const { authLimiter } = require('../middleware/security');
 
@@ -23,7 +30,18 @@ router.post('/register', authLimiter, asyncHandler(async (req, res) => {
         TableName: 'cv_users',
         Item: { id: Date.now().toString(), username, password: hashedPassword }
     }));
-    // ... (rest of registration) ...
+
+    const now = new Date().toISOString();
+    const emptyCv = {
+        profile: { firstName: username, lastName: '', subtitle: '', photoPath: '', summary: '', quote: '' },
+        contact: { phone: '', email: '', location: '', linkedin: '', linkedinUrl: '' },
+        skills: [], languages: [], experience: [], education: [], coreValues: [], certifications: []
+    };
+    await docClient.send(new PutCommand({
+        TableName: CV_TABLE,
+        Item: { username, cvId: `cv_${Date.now()}`, label: 'My CV', isDefault: true, createdAt: now, updatedAt: now, data: emptyCv }
+    }));
+
     res.status(201).json({ success: true, message: 'User registered' });
 }));
 
