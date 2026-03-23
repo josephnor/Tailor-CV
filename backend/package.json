@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "jest": "^30.3.0",
+    "serverless-dotenv-plugin": "^6.0.0",
     "supertest": "^7.2.2"
   }
 }

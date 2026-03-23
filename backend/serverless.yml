@@ -1,5 +1,8 @@
 service: mi-cv-backend
 
+plugins:
+  - serverless-dotenv-plugin
+
 provider:
   name: aws
   runtime: nodejs22.x
