@@ -18,3 +18,6 @@ backend/data/users.json
 # Serverless artifacts
 backend/.serverless/
 .serverless/
+
+# Personal records
+README-PERSONAL.md
