@@ -57,8 +57,12 @@ export class Register {
   private router = inject(Router);
 
   registerForm: FormGroup = this.fb.group({
-    username: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9_-]+$/)]],
-    password: ['', [Validators.required, Validators.minLength(6)]]
+    username: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30), Validators.pattern(/^[a-zA-Z0-9_-]+$/)]],
+    password: ['', [
+      Validators.required,
+      Validators.minLength(8),
+      Validators.pattern(/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/), // Aligned with backend zod regex
+    ]]
   });
 
   loading = false;

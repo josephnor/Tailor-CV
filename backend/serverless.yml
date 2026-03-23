@@ -2,7 +2,7 @@ service: mi-cv-backend
 
 provider:
   name: aws
-  runtime: nodejs20.x
+  runtime: nodejs22.x
   region: us-east-1
   stage: dev
   memorySize: 256
@@ -29,7 +29,7 @@ provider:
             - s3:PutObject
             - s3:GetObject
           Resource:
-            - arn:aws:s3:::mi-cv-data-867344442987/*
+            - arn:aws:s3:::${env:BUCKET_NAME}/*
 
 functions:
   api:

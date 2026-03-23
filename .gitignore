@@ -14,3 +14,7 @@ frontend/.angular/
 # Local data files
 backend/data/cvs/*.json
 backend/data/users.json
+
+# Serverless artifacts
+backend/.serverless/
+.serverless/

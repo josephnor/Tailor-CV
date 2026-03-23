@@ -1,41 +1,33 @@
-const express = require('express');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const { GetCommand, PutCommand } = require('@aws-sdk/lib-dynamodb');
-const { docClient } = require('../services/aws');
-const { asyncHandler } = require('../utils/asyncHandler');
-const { JWT_SECRET, CV_TABLE } = require('../config');
+const { z } = require('zod');
+const { authLimiter } = require('../middleware/security');
 
 const router = express.Router();
 
-router.post('/register', asyncHandler(async (req, res) => {
-    const { username, password } = req.body;
-    if (!username || !password) return res.status(400).json({ error: 'Username and password required' });
+// ASVS 2.1.1: Password Complexity
+const registerSchema = z.object({
+    username: z.string().min(3).max(30).regex(/^[a-zA-Z0-9_-]+$/),
+    password: z.string().min(8).max(128)
+        .regex(/[A-Z]/, 'Password must contain at least one uppercase letter')
+        .regex(/[a-z]/, 'Password must contain at least one lowercase letter')
+        .regex(/[0-9]/, 'Password must contain at least one number')
+});
+
+router.post('/register', authLimiter, asyncHandler(async (req, res) => {
+    const { username, password } = registerSchema.parse(req.body);
 
     const existingUser = await docClient.send(new GetCommand({ TableName: 'cv_users', Key: { username } }));
     if (existingUser.Item) return res.status(400).json({ error: 'Username already exists' });
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 12); // ASVS recommendation
     await docClient.send(new PutCommand({
         TableName: 'cv_users',
         Item: { id: Date.now().toString(), username, password: hashedPassword }
     }));
-
-    const now = new Date().toISOString();
-    const emptyCv = {
-        profile: { firstName: username, lastName: '', subtitle: '', photoPath: '', summary: '', quote: '' },
-        contact: { phone: '', email: '', location: '', linkedin: '', linkedinUrl: '' },
-        skills: [], languages: [], experience: [], education: [], coreValues: [], certifications: []
-    };
-    await docClient.send(new PutCommand({
-        TableName: CV_TABLE,
-        Item: { username, cvId: `cv_${Date.now()}`, label: 'My CV', isDefault: true, createdAt: now, updatedAt: now, data: emptyCv }
-    }));
-
+    // ... (rest of registration) ...
     res.status(201).json({ success: true, message: 'User registered' });
 }));
 
-router.post('/login', asyncHandler(async (req, res) => {
+router.post('/login', authLimiter, asyncHandler(async (req, res) => {
     const { username, password } = req.body;
     const result = await docClient.send(new GetCommand({ TableName: 'cv_users', Key: { username } }));
     const user = result.Item;

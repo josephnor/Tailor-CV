@@ -32,7 +32,11 @@ async function queryUserCvs(username) {
     return result.Items || [];
 }
 
-router.get('/:username', asyncHandler(async (req, res) => {
+router.get('/:username', authenticateToken, asyncHandler(async (req, res) => {
+    // ASVS 4.1.1: Ensure user can only access their own CVs or provide public visibility logic
+    if (req.user.username !== req.params.username) {
+        return res.status(403).json({ error: 'Forbidden: Cannot access other users’ resources' });
+    }
     const items = await queryUserCvs(req.params.username);
     if (items.length === 0) return res.status(404).json({ error: 'No CVs found' });
 
@@ -42,7 +46,10 @@ router.get('/:username', asyncHandler(async (req, res) => {
     res.json(cvList);
 }));
 
-router.get('/:username/default', asyncHandler(async (req, res) => {
+router.get('/:username/default', authenticateToken, asyncHandler(async (req, res) => {
+    if (req.user.username !== req.params.username) {
+        return res.status(403).json({ error: 'Forbidden' });
+    }
     const items = await queryUserCvs(req.params.username);
     if (items.length === 0) return res.status(404).json({ error: 'CV not found' });
 
@@ -50,8 +57,11 @@ router.get('/:username/default', asyncHandler(async (req, res) => {
     res.json({ ...defaultCv.data, cvId: defaultCv.cvId, label: defaultCv.label });
 }));
 
-router.get('/:username/:cvId', asyncHandler(async (req, res) => {
+router.get('/:username/:cvId', authenticateToken, asyncHandler(async (req, res) => {
     const { username, cvId } = req.params;
+    if (req.user.username !== username) {
+        return res.status(403).json({ error: 'Forbidden' });
+    }
     const result = await docClient.send(new GetCommand({ TableName: CV_TABLE, Key: { username, cvId } }));
     if (!result.Item) return res.status(404).json({ error: 'CV not found' });
 

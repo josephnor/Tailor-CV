@@ -8,8 +8,8 @@
 
 | Componente | URL de Acceso |
 |:---|:---|
-| **Página Pública (CDN)** | [https://d1akextf5b551n.cloudfront.net](https://d1akextf5b551n.cloudfront.net) |
-| **Backend API (Lambda)** | `https://fjq1w6snz8.execute-api.us-east-1.amazonaws.com` |
+| **Página Pública (CDN)** | `https://your-domain.cloudfront.net` |
+| **Backend API (Lambda)** | `https://your-api.execute-api.us-east-1.amazonaws.com` |
 
 ---
 
@@ -85,9 +85,9 @@ npx serverless deploy
 ```bash
 cd frontend
 npx ng build --configuration production
-aws s3 sync dist/frontend/browser/ s3://mi-cv-frontend-867344442987 --delete
+aws s3 sync dist/frontend/browser/ s3://your-s3-frontend-bucket --delete
 # Invalidar caché si es necesario:
-# aws cloudfront create-invalidation --distribution-id E318MO6RO0IAQ1 --paths "/*"
+# aws cloudfront create-invalidation --distribution-id YOUR_DIST_ID --paths "/*"
 ```
 
 ---

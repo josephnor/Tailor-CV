@@ -7,11 +7,15 @@ const authRoutes = require('./src/routes/auth');
 const cvRoutes = require('./src/routes/cv');
 const aiRoutes = require('./src/routes/ai');
 
+const { securityHeaders, globalLimiter } = require('./src/middleware/security');
+
 const app = express();
 
+app.use(securityHeaders);
+app.use(globalLimiter);
 app.use(cors());
-app.use(express.json({ limit: '50mb' }));
-app.use(express.urlencoded({ limit: '50mb', extended: true }));
+app.use(express.json({ limit: '1mb' })); // Restricted limit (ASVS 13.1.2)
+app.use(express.urlencoded({ limit: '1mb', extended: true }));
 
 // Request logging
 app.use((req, res, next) => {
