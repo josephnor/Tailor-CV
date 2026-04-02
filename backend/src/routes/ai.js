@@ -64,7 +64,7 @@ router.post('/tailor', authenticateToken, asyncHandler(async (req, res) => {
     const baseCvString = JSON.stringify(baseCv).replace(/`/g, '\\`');
     const sanitizedJobText = targetJobText.replace(/`/g, '\\`').slice(0, 10000);
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
     const prompt = `
         You are a world-class career coach and CV writer. 
         I will provide you with a base CV in JSON format and a job description.

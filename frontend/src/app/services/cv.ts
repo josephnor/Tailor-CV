@@ -18,6 +18,13 @@ export interface CvContact {
   location: string;
   linkedin: string;
   linkedinUrl: string;
+  customFields?: CvCustomField[];
+}
+
+export interface CvCustomField {
+  label: string;
+  value: string;
+  link?: string;
 }
 
 export interface CvLanguage {

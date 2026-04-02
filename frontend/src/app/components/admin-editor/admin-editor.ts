@@ -41,6 +41,7 @@ export class AdminEditor implements OnInit {
   get education() { return this.cvForm.get('education') as FormArray; }
   get coreValues() { return this.cvForm.get('coreValues') as FormArray; }
   get certifications() { return this.cvForm.get('certifications') as FormArray; }
+  get customFields() { return this.cvForm.get('contact.customFields') as FormArray; }
 
   ngOnInit() {
     const username = this.authService.currentUsername!;
@@ -93,7 +94,12 @@ export class AdminEditor implements OnInit {
         email: [contact.email || '', Validators.email],
         location: [contact.location || ''],
         linkedin: [contact.linkedin || ''],
-        linkedinUrl: [contact.linkedinUrl || '']
+        linkedinUrl: [contact.linkedinUrl || ''],
+        customFields: this.fb.array((contact.customFields || []).map((f: any) => this.fb.group({
+          label: [f.label || ''],
+          value: [f.value || ''],
+          link: [f.link || '']
+        })))
       }),
       skills: this.fb.array((data.skills || []).map(s => this.fb.control(s))),
       coreValues: this.fb.array((data.coreValues || []).map(v => this.fb.control(v))),
@@ -128,6 +134,11 @@ export class AdminEditor implements OnInit {
   // Helpers to add array items
   addStringItem(arr: FormArray) { arr.push(this.fb.control('')); }
   removeStringItem(arr: FormArray, index: number) { arr.removeAt(index); }
+
+  addCustomField() {
+    this.customFields.push(this.fb.group({ label: [''], value: [''], link: [''] }));
+  }
+  removeCustomField(index: number) { this.customFields.removeAt(index); }
 
   addLanguage() {
     this.languages.push(this.fb.group({ name: [''], level: [''], percentage: [0] }));
