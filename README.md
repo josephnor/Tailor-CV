@@ -16,9 +16,9 @@
 ## 🛠️ Stack Tecnológico
 
 *   **Frontend**: Angular 19+ (Signals, Standalone Components, Tailwind CSS).
-*   **Backend**: Node.js & Express (Modular Architecture).
-*   **Cloud Cloud**: AWS (S3, CloudFront, Lambda, API Gateway, DynamoDB).
-*   **AI**: Google Gemini 2.5 Flash API.
+*   **Backend**: Node.js & Express (Arquitectura Serverless).
+*   **Nube**: AWS (S3, CloudFront, Lambda, API Gateway, DynamoDB).
+*   **AI**: Google Gemini API (Model: `gemini-2.0-flash` o superior).
 *   **DevOps**: Docker, Docker Compose, Serverless Framework.
 
 ---
@@ -26,17 +26,22 @@
 ## ✨ Features Estrella
 
 ### 🤖 AI Tailor Assistant (Powered by Gemini)
-Optimiza tu currículum para vacantes específicas. Nuestra IA analiza la descripción del puesto y adapta tu perfil profesional para maximizar tus posibilidades de éxito.
+Optimiza tu currículum para vacantes específicas. Nuestra IA analiza la descripción del puesto (vía **texto directo o URL**) y adapta tu perfil profesional para maximizar tus posibilidades de éxito.
+
+### 🧩 Gestión de Datos Inteligente
+*   **Dynamic Contact Info**: Añade, edita y elimina campos de contacto personalizados (GitHub, Discord, Portfolio, etc.) de forma dinámica.
+*   **Detailed Sections**: Gestión granular de Habilidades, Valores Éticos, Certificaciones e Idiomas (con niveles de maestría).
+*   **Dashboard Multi-CV**: Crea, duplica y gestiona múltiples versiones de tu portfolio.
 
 ### 💎 Experiencia de Usuario Premium
 *   **Midnight Mesh**: Estética visual moderna con gradientes dinámicos y "Glassmorphism".
-*   **Modern Dialogs & Toasts**: Sistema de interacción personalizado que reemplaza las alertas nativas del navegador por componentes fluidos y animados.
-*   **Skeleton Loading**: Transiciones de carga inteligentes que simulan la estructura del CV, mejorando la percepción de velocidad.
+*   **Modern Interaction**: Sistema de Toasts y Diálogos animados que garantizan una navegación fluida.
+*   **Skeleton Loading**: Transiciones inteligentes que simulan la estructura del CV para una carga percibida instantánea.
 
-### 🔐 Gestión Robusta
-*   **Dashboard Multi-CV**: Crea, duplica y gestiona múltiples versiones de tu portfolio.
-*   **Seguridad**: Autenticación basada en JWT (JSON Web Tokens) y cifrado de contraseñas con bcryptjs.
-*   **PDF Optimizado**: Estilos de impresión CSS avanzados para exportar currículums en formato A4 perfecto.
+### 🔐 Seguridad y Robustez
+*   **Protección AI**: Mitigación de SSRF y Prompt Injection para interacciones seguras con la IA.
+*   **Autenticación**: Gestión de sesiones basada en JWT y cifrado de contraseñas con bcryptjs.
+*   **PDF Optimizado**: Estilos de impresión avanzados para exportar currículums en formato A4 perfecto.
 
 ---
 
@@ -44,27 +49,25 @@ Optimiza tu currículum para vacantes específicas. Nuestra IA analiza la descri
 
 ### 📋 Prerrequisitos
 - Node.js (v20 o superior)
-- Docker Desktop (Recomendado para desarrollo)
-- AWS CLI (Configurado con credenciales válidas si deseas desplegar)
+- Docker Desktop (Recomendado)
+- AWS CLI (Configurado para despliegue)
 
 ### ⚙️ Configuración inicial
 1. Copia el archivo de ejemplo de variables de entorno:
    ```bash
    cp backend/.env.example backend/.env
    ```
-2. Abre `backend/.env` y añade tu `GEMINI_API_KEY` (puedes obtenerla en [Google AI Studio](https://aistudio.google.com/)) y define un `JWT_SECRET` para sesiones seguras.
+2. Abre `backend/.env` y añade tu `GEMINI_API_KEY` (obténla en [Google AI Studio](https://aistudio.google.com/)).
 
 ### 🛠️ Ejecución Local Tradicional
-Si tienes Node.js instalado, puedes levantar frontend y backend simultáneamente:
 ```bash
 npm install
 npm start
 ```
 
 ### 🐳 Ejecución con Docker (Recomendado)
-Docker garantiza que el entorno sea idéntico al de producción sin necesidad de configurar nada en tu sistema local:
 ```bash
-# Iniciar servicios con volumen de datos sincronizado (Hot Reload)
+# Iniciar servicios con Hot Reload
 docker compose up --build
 
 # Detener servicios
@@ -86,8 +89,6 @@ npx serverless deploy
 cd frontend
 npx ng build --configuration production
 aws s3 sync dist/frontend/browser/ s3://your-s3-frontend-bucket --delete
-# Invalidar caché si es necesario:
-# aws cloudfront create-invalidation --distribution-id YOUR_DIST_ID --paths "/*"
 ```
 
 ---
@@ -97,15 +98,15 @@ aws s3 sync dist/frontend/browser/ s3://your-s3-frontend-bucket --delete
 ```text
 ├── backend
 │   ├── src
-│   │   ├── routes/      # Endpoints modulares (Auth, CV, AI)
-│   │   ├── services/    # Clientes de AWS y Gemini
-│   │   └── utils/       # Helpers y Middlewares
+│   │   ├── routes/      # APIs (Auth, CV, AI Tailor)
+│   │   ├── services/    # Clientes AWS (DynamoDB, S3)
+│   │   └── middleware/  # Auth & Error Handling
 │   ├── Dockerfile       # Receta de contenedor backend
-│   └── serverless.yml   # Definición de infraestructura AWS
+│   └── serverless.yml   # IaC (Infrastructure as Code)
 ├── frontend
 │   ├── src/app
-│   │   ├── components/  # UI (Editor, Dash, Toasts, Dialogs)
-│   │   ├── services/    # Lógica de comunicación API
+│   │   ├── components/  # Admin, Dashboard, CV View
+│   │   ├── services/    # Lógica de negocio & API
 │   │   └── pipes/       # Transformadores de datos (Markdown)
 │   └── Dockerfile       # Receta de contenedor frontend
 └── docker-compose.yml   # Orquestación local de servicios
