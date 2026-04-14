@@ -1,4 +1,9 @@
 @media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
     @page {
         size: A4 portrait;
         margin: 0;
@@ -40,9 +45,11 @@
         overflow: visible !important;
     }
 
-    /* Text & Gap compression */
-    section {
+    /* Text & Gap compression & layout */
+    section, article, .cv-card-glow {
         margin-bottom: 0 !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     h2 {
@@ -57,6 +64,19 @@
     li,
     span {
         line-height: normal !important;
+    }
+
+    /* Print Footer - Fixed to bottom of every page */
+    .cv2-footer {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        background-color: #0f172a !important; /* Same dark slate as sidebar */
+        color: #94a3b8 !important;
+        padding: 0.5rem 0 !important;
+        margin: 0 !important;
+        z-index: 1000 !important;
     }
 
     /* Hide admin UI */
