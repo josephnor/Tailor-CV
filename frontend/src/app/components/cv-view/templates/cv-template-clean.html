@@ -1,0 +1,95 @@
+<div class="cv-root-container flex flex-col md:flex-row bg-white shadow-2xl overflow-hidden print:shadow-none print:flex-row text-stone-800 border border-slate-200">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-[35%] bg-amber-100/50 p-8 flex flex-col gap-10 print:w-[35%] print:bg-[#f3eadf]" style="-webkit-print-color-adjust: exact; print-color-adjust: exact;">
+        
+        <!-- Photo -->
+        <div class="flex flex-col items-center">
+            <div class="relative w-40 h-40 rounded-full overflow-hidden flex-shrink-0 shadow-md">
+                <img [src]="data.profile.photoPath" alt="Profile" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <section class="flex flex-col items-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-stone-800 border border-stone-800 px-6 py-1 mb-6">Contact</h2>
+            <ul class="flex flex-col items-center gap-4 text-xs text-stone-700 font-medium">
+                <li class="flex flex-col items-center gap-1.5">
+                    <svg width="18" height="18" class="text-stone-800" aria-hidden="true" focusable="false"><use href="#cv2-icon-phone" /></svg>
+                    <span>{{ data.contact.phone }}</span>
+                </li>
+                <li class="flex flex-col items-center gap-1.5 mt-2">
+                    <svg width="18" height="18" class="text-stone-800" aria-hidden="true" focusable="false"><use href="#cv2-icon-mail" /></svg>
+                    <span>{{ data.contact.email }}</span>
+                </li>
+                <li class="flex flex-col items-center gap-1.5 mt-2">
+                    <svg width="18" height="18" class="text-stone-800" aria-hidden="true" focusable="false"><use href="#cv2-icon-mappin" /></svg>
+                    <span class="text-center">{{ data.contact.location }}</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="flex flex-col items-center mt-2">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-stone-800 border border-stone-800 px-6 py-1 mb-6">Education</h2>
+            <div class="flex flex-col gap-6 text-center w-full">
+                <article *ngFor="let edu of data.education">
+                    <h3 class="font-bold text-stone-800 text-[13px] uppercase tracking-wide">{{ edu.institution }}</h3>
+                    <p class="text-xs text-stone-600 font-medium italic mt-1">{{ edu.degree }} / {{ edu.period }}</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="flex flex-col items-center mt-2">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-stone-800 border border-stone-800 px-6 py-1 mb-6">Skills</h2>
+            <ul class="flex flex-col items-start gap-2 text-[13px] text-stone-700 font-medium list-disc ml-4">
+                <li *ngFor="let s of data.skills" class="uppercase tracking-widest">{{ s }}</li>
+            </ul>
+        </section>
+        
+        <!-- Extracurriculars -->
+        <section class="flex flex-col items-center mt-2" *ngIf="data.coreValues?.length">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-stone-800 border border-stone-800 px-6 py-1 mb-6 text-center">Values</h2>
+            <ul class="flex flex-col items-start gap-2 text-[13px] text-stone-700 font-medium list-disc ml-4">
+                <li *ngFor="let v of data.coreValues" class="uppercase tracking-widest">{{ v }}</li>
+            </ul>
+        </section>
+
+    </aside>
+
+    <!-- Main Content -->
+    <div class="w-full md:w-[65%] p-10 md:p-14 flex flex-col gap-12 print:w-[65%] bg-white pb-20">
+        
+        <!-- Header -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left border-b border-stone-300 pb-10">
+            <h1 class="text-5xl font-['Brush_Script_MT',cursive] tracking-wider text-stone-800 mb-6 font-light italic" style="font-family: 'Great Vibes', 'Brush Script MT', cursive;">
+                {{ data.profile.firstName }} {{ data.profile.lastName }}
+            </h1>
+            <p class="text-sm text-stone-700 font-medium tracking-[0.2em] uppercase border border-stone-800 px-6 py-2 inline-block">
+                {{ data.profile.subtitle }}
+            </p>
+        </div>
+
+        <!-- Profile -->
+        <section>
+            <h2 class="text-lg font-bold uppercase tracking-widest text-stone-800 mb-4 inline-block">Profile</h2>
+            <p class="text-[13px] text-stone-600 leading-loose font-medium" [innerHTML]="data.profile.summary"></p>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2 class="text-lg font-bold uppercase tracking-widest text-stone-800 border-b border-stone-300 w-full pb-2 mb-6">Work Experience</h2>
+            <div class="flex flex-col gap-8">
+                <article *ngFor="let exp of data.experience">
+                    <h3 class="font-bold text-stone-800 text-[13px] uppercase tracking-wide">{{ exp.role }}</h3>
+                    <p class="text-[13px] text-stone-600 font-medium italic mt-0.5 mb-3">{{ exp.company }} / {{ exp.period }}</p>
+                    <ul class="flex flex-col gap-1 text-[13px] text-stone-600 list-disc pl-5 font-medium">
+                        <li *ngFor="let bullet of exp.achievements" [innerHTML]="bullet | markdown" class="leading-relaxed"></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+    </div>
+</div>

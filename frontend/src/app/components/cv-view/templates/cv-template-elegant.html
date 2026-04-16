@@ -1,0 +1,115 @@
+<div class="cv-root-container flex flex-col md:flex-row bg-rose-50 shadow-2xl rounded-2xl overflow-hidden print:shadow-none print:rounded-none print:flex-row text-stone-800" style="-webkit-print-color-adjust: exact; print-color-adjust: exact;">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-[35%] bg-rose-100 p-8 flex flex-col gap-8 print:w-[35%] print:bg-rose-100 border-r border-rose-200" style="-webkit-print-color-adjust: exact; print-color-adjust: exact;">
+        <!-- Photo -->
+        <div class="flex flex-col items-center">
+            <div class="relative w-48 h-48 rounded-full overflow-hidden flex-shrink-0 shadow-lg border-4 border-white mb-2">
+                <img [src]="data.profile.photoPath" alt="Profile" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <section>
+            <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-stone-700 border-b-2 border-stone-300 pb-1 mb-4">Contact</h2>
+            <ul class="flex flex-col gap-3 text-sm text-stone-600 font-medium tracking-wide">
+                <li class="flex items-center gap-3">
+                    <svg width="16" height="16" class="text-stone-700" aria-hidden="true" focusable="false"><use href="#cv2-icon-phone" /></svg>
+                    {{ data.contact.phone }}
+                </li>
+                <li class="flex items-center gap-3">
+                    <svg width="16" height="16" class="text-stone-700" aria-hidden="true" focusable="false"><use href="#cv2-icon-mail" /></svg>
+                    {{ data.contact.email }}
+                </li>
+                <li class="flex items-center gap-3">
+                    <svg width="16" height="16" class="text-stone-700" aria-hidden="true" focusable="false"><use href="#cv2-icon-mappin" /></svg>
+                    {{ data.contact.location }}
+                </li>
+                <li class="flex items-center gap-3">
+                    <svg width="16" height="16" class="text-stone-700" aria-hidden="true" focusable="false"><use href="#cv2-icon-linkedin" /></svg>
+                    <a [href]="data.contact.linkedinUrl" target="_blank">{{ data.contact.linkedin }}</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-stone-700 border-b-2 border-stone-300 pb-1 mb-4">Skills</h2>
+            <ul class="flex flex-col gap-2 text-sm text-stone-600 font-medium list-disc pl-5">
+                <li *ngFor="let s of data.skills" class="marker:text-stone-400">{{ s }}</li>
+            </ul>
+        </section>
+
+        <!-- Core Values / Extra -->
+        <section *ngIf="data.coreValues?.length">
+            <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-stone-700 border-b-2 border-stone-300 pb-1 mb-4">Values & Activities</h2>
+            <ul class="flex flex-col gap-2 text-sm text-stone-600 font-medium list-disc pl-5">
+                <li *ngFor="let v of data.coreValues" class="marker:text-stone-400">{{ v }}</li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section>
+            <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-stone-700 border-b-2 border-stone-300 pb-1 mb-4">Languages</h2>
+            <ul class="flex flex-col gap-2 text-sm text-stone-600 font-medium">
+                <li *ngFor="let l of data.languages" class="flex justify-between items-center">
+                    <span>{{ l.name }}</span>
+                    <div class="flex gap-1">
+                        <div *ngFor="let i of [1,2,3,4,5]" class="w-2 h-2 rounded-full" [ngClass]="(i * 20) <= l.percentage ? 'bg-stone-700' : 'bg-rose-200'"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="w-full md:w-[65%] p-10 md:p-14 flex flex-col gap-10 print:w-[65%] relative">
+        <!-- Vertical separator line -->
+        <div class="absolute left-8 top-12 bottom-12 w-[1px] bg-stone-300/50 print:block hidden md:block"></div>
+        <div class="absolute left-[29px] top-12 bottom-12 w-[1px]  print:block hidden md:block flex flex-col justify-between py-10 items-center h-full">
+            <div class="w-2 h-2 rounded-full border-2 border-rose-300 bg-rose-50 absolute -left-[3.5px] top-0"></div>
+            <div class="w-2 h-2 rounded-full border-2 border-rose-300 bg-rose-50 absolute -left-[3.5px] bottom-0"></div>
+        </div>
+
+        <!-- Header -->
+        <div class="pl-4">
+            <h1 class="text-4xl md:text-5xl font-light tracking-[0.2em] uppercase text-stone-800 mb-2">
+                {{ data.profile.firstName }} <span class="font-medium">{{ data.profile.lastName }}</span>
+            </h1>
+            <p class="text-sm text-stone-500 font-medium tracking-[0.3em] uppercase">{{ data.profile.subtitle }}</p>
+        </div>
+
+        <!-- Profile -->
+        <section class="pl-4">
+            <h2 class="bg-stone-300/40 text-stone-700 uppercase tracking-[0.2em] font-bold text-sm px-4 py-2 mb-4 inline-block print:bg-[#e7e5e4]">Professional Profile</h2>
+            <p class="text-sm text-stone-600 leading-relaxed" [innerHTML]="data.profile.summary"></p>
+        </section>
+
+        <!-- Experience -->
+        <section class="pl-4">
+            <h2 class="bg-stone-300/40 text-stone-700 uppercase tracking-[0.2em] font-bold text-sm px-4 py-2 mb-6 inline-block print:bg-[#e7e5e4]">Professional Experience</h2>
+            <div class="flex flex-col gap-6">
+                <article *ngFor="let exp of data.experience">
+                    <h3 class="font-bold text-stone-800 text-base mb-1">{{ exp.role }}</h3>
+                    <p class="text-sm text-stone-600 font-medium mb-3">{{ exp.company }} <span class="text-stone-400 font-normal">({{ exp.period }})</span></p>
+                    <ul class="flex flex-col gap-2 text-sm text-stone-600 list-disc pl-4 marker:text-stone-400">
+                        <li *ngFor="let bullet of exp.achievements" [innerHTML]="bullet | markdown" class="leading-relaxed"></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="pl-4">
+            <h2 class="bg-stone-300/40 text-stone-700 uppercase tracking-[0.2em] font-bold text-sm px-4 py-2 mb-6 inline-block print:bg-[#e7e5e4]">Education</h2>
+            <div class="flex flex-col gap-5">
+                <article *ngFor="let edu of data.education">
+                    <h3 class="font-bold text-stone-800 text-base">{{ edu.degree }}</h3>
+                    <p class="text-sm text-stone-600 font-medium">{{ edu.institution }} <span class="text-stone-400 font-normal">({{ edu.period }})</span></p>
+                    <p class="text-xs text-stone-500 mt-1" *ngIf="edu.note">• {{ edu.note }}</p>
+                </article>
+            </div>
+        </section>
+
+    </div>
+</div>

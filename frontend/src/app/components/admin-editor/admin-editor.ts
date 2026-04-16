@@ -81,6 +81,7 @@ export class AdminEditor implements OnInit {
     const contact = data.contact || {};
 
     this.cvForm = this.fb.group({
+      template: [data.template || 'default'],
       profile: this.fb.group({
         firstName: [profile.firstName || '', Validators.required],
         lastName: [profile.lastName || '', Validators.required],
@@ -202,7 +203,7 @@ export class AdminEditor implements OnInit {
       next: () => {
         this.saving = false;
         this.cdr.markForCheck();
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/', this.authService.currentUsername, this.cvId]);
       },
       error: (err) => {
         console.error('Save failed', err);

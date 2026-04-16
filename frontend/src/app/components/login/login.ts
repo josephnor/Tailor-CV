@@ -11,12 +11,10 @@ import { AuthService } from '../../services/auth';
   template: `
     <div class="min-h-screen mesh-gradient flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       
-      <!-- Welcome Title -->
-      <div class="mb-10 text-center animate-fade-in-up">
-        <h1 class="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-600 drop-shadow-lg tracking-tight mb-2">
-          TailorCV<br/>
-        </h1> 
-        <p class="text-lg text-slate-300 font-medium">Create and manage your curriculum effortlessly.</p>
+      <!-- Logo / Welcome -->
+      <div class="mb-10 text-center animate-fade-in-up flex flex-col items-center">
+        <img src="/logos/tailor-cv-white.png" alt="TailorCV Logo" class="w-120 h-auto mb-2 drop-shadow-2xl logo-screen-blend object-contain">
+        <p class="text-xl text-slate-300 font-medium max-w-sm">Create and manage your curriculum with artificial intelligence.</p>
       </div>
 
       <div class="max-w-md w-full space-y-8 bg-slate-900 p-10 rounded-2xl shadow-2xl border border-slate-800">

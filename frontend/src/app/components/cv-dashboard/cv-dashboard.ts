@@ -1,15 +1,26 @@
 import { Component, OnInit, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
-import { CvService, CvListItem } from '../../services/cv';
+import { CvService, CvListItem, CvData } from '../../services/cv';
 import { AuthService } from '../../services/auth';
 import { ToastService } from '../../services/toast.service';
 import { DialogService } from '../../services/dialog.service';
+import { CvTemplateDefault } from '../cv-view/templates/cv-template-default';
+import { CvTemplateElegant } from '../cv-view/templates/cv-template-elegant';
+import { CvTemplateBold } from '../cv-view/templates/cv-template-bold';
+import { CvTemplateClean } from '../cv-view/templates/cv-template-clean';
 
 @Component({
     selector: 'app-cv-dashboard',
     standalone: true,
-    imports: [CommonModule, RouterModule],
+    imports: [
+        CommonModule, 
+        RouterModule,
+        CvTemplateDefault,
+        CvTemplateElegant,
+        CvTemplateBold,
+        CvTemplateClean
+    ],
     templateUrl: './cv-dashboard.html',
     styleUrl: './cv-dashboard.css'
 })
@@ -25,6 +36,11 @@ export class CvDashboard implements OnInit {
     loading = true;
     creating = false;
 
+    // Preview state
+    selectedCvId: string | null = null;
+    selectedCvData: CvData | null = null;
+    previewLoading = false;
+
     ngOnInit() {
         this.loadCvs();
     }
@@ -36,12 +52,41 @@ export class CvDashboard implements OnInit {
             next: (list) => {
                 this.cvList = list.sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime());
                 this.loading = false;
+                
+                // Select default or first CV for preview
+                if (this.cvList.length > 0) {
+                    const defaultCv = this.cvList.find(cv => cv.isDefault) || this.cvList[0];
+                    this.selectCv(defaultCv.cvId);
+                }
+                
                 this.cdr.markForCheck();
             },
             error: () => {
                 this.cvList = [];
                 this.loading = false;
                 this.cdr.markForCheck();
+            }
+        });
+    }
+
+    selectCv(cvId: string) {
+        if (this.selectedCvId === cvId && this.selectedCvData) return;
+        
+        this.selectedCvId = cvId;
+        this.previewLoading = true;
+        this.cdr.markForCheck();
+
+        const username = this.authService.currentUsername!;
+        this.cvService.getCv(username, cvId).subscribe({
+            next: (data) => {
+                this.selectedCvData = data;
+                this.previewLoading = false;
+                this.cdr.markForCheck();
+            },
+            error: () => {
+                this.previewLoading = false;
+                this.cdr.markForCheck();
+                this.toastService.show('Failed to load preview', 'error');
             }
         });
     }
@@ -112,5 +157,15 @@ export class CvDashboard implements OnInit {
 
     formatDate(iso: string): string {
         return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    }
+
+    getTemplateName(template: string | undefined): string {
+        const names: Record<string, string> = {
+            'default': 'Minimal',
+            'elegant': 'Elegant',
+            'bold': 'Bold',
+            'clean': 'Clean',
+        };
+        return names[template || 'default'] || (template || 'Minimal');
     }
 }

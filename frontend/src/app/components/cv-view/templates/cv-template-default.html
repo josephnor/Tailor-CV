@@ -1,0 +1,211 @@
+        <!-- CV Root -->
+        <div
+            class="cv-root-container flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl overflow-hidden print:shadow-none print:rounded-none print:flex-row">
+
+            <!-- Sidebar -->
+            <aside
+                class="w-full md:w-1/3 bg-slate-900 text-white p-8 flex flex-col gap-8 print:w-1/3 print:bg-slate-900 print:text-white"
+                style="-webkit-print-color-adjust: exact; print-color-adjust: exact;">
+
+                <!-- Photo + Name -->
+                <div class="flex flex-col items-center gap-6">
+                    <div
+                        class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-red-600 overflow-hidden bg-slate-800 flex-shrink-0 shadow-2xl">
+                        <img [src]="data.profile.photoPath" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h1 class="text-3xl font-bold leading-tight uppercase text-white">
+                            {{ data.profile.firstName }}<br>
+                            <span class="text-red-600">{{ data.profile.lastName }}</span>
+                        </h1>
+                        <p class="text-slate-400 mt-2 font-medium tracking-wide text-sm">{{ data.profile.subtitle }}
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <section>
+                    <h2
+                        class="text-xs font-bold uppercase tracking-widest border-b border-slate-800 pb-2 text-red-500 mb-4">
+                        Contact</h2>
+                    <ul class="flex flex-col gap-3 text-sm">
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-phone" />
+                            </svg>
+                            {{ data.contact.phone }}
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-mail" />
+                            </svg>
+                            {{ data.contact.email }}
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-mappin" />
+                            </svg>
+                            {{ data.contact.location }}
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0" aria-hidden="true"
+                                focusable="false">
+                                <use href="#cv2-icon-linkedin" />
+                            </svg>
+                            <a [href]="data.contact.linkedinUrl" target="_blank" class="hover:underline">{{
+                                data.contact.linkedin }}</a>
+                        </li>
+                        <li *ngFor="let field of data.contact.customFields" class="flex items-start gap-3 mt-1">
+                            <svg width="16" height="16" class="text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                            </svg>
+                            <div class="flex flex-col">
+                                <span
+                                    class="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-none mb-1">{{field.label}}</span>
+                                <a *ngIf="field.link" [href]="field.link" target="_blank"
+                                    class="hover:underline text-[13px] leading-tight">{{field.value}}</a>
+                                <span *ngIf="!field.link" class="text-[13px] leading-tight">{{field.value}}</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Skills -->
+                <section>
+                    <h2
+                        class="text-xs font-bold uppercase tracking-widest border-b border-slate-800 pb-2 text-red-500 mb-4">
+                        Top Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span *ngFor="let s of data.skills"
+                            class="bg-[#1f2937] border border-[#374151] px-[0.6rem] py-1 rounded text-xs text-[#9ca3af] transition-all duration-200 hover:border-red-600 hover:text-white hover:-translate-y-[1px] cursor-default">{{
+                            s }}</span>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section>
+                    <h2
+                        class="text-xs font-bold uppercase tracking-widest border-b border-slate-800 pb-2 text-red-500 mb-4">
+                        Languages</h2>
+                    <div class="flex flex-col gap-3">
+                        <div *ngFor="let l of data.languages">
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>{{ l.name }}</span>
+                                <span class="text-red-500 font-bold">{{ l.level }}</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                                <div class="bg-red-600 h-full rounded-full" [style.width.%]="l.percentage"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quote -->
+                <div
+                    class="bg-slate-800 p-4 rounded border-l-4 border-red-600 italic text-sm text-slate-400 leading-relaxed mt-auto">
+                    "{{ data.profile.quote }}"
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="main-content-area w-full md:w-2/3 p-8 md:p-12 flex flex-col gap-10 print:w-2/3 bg-white">
+
+                <!-- Profile -->
+                <section>
+                    <h2
+                        class="text-lg font-bold text-slate-900 uppercase tracking-widest border-l-4 border-red-600 pl-3 mb-6">
+                        Professional Profile</h2>
+                    <p class="text-slate-600 leading-loose text-sm" [innerHTML]="data.profile.summary"></p>
+                </section>
+
+                <!-- Experience -->
+                <section>
+                    <h2
+                        class="text-lg font-bold text-slate-900 uppercase tracking-widest border-l-4 border-red-600 pl-3 mb-6">
+                        Experience</h2>
+                    <div class="experience-list relative pl-6 border-l border-slate-200 flex flex-col gap-8">
+                        <article *ngFor="let exp of data.experience" class="relative">
+                            <div class="absolute w-3 h-3 bg-red-600 rounded-full -left-[1.89rem] top-1 print:bg-red-600 border-2 border-white"
+                                style="-webkit-print-color-adjust: exact; print-color-adjust: exact;"></div>
+                            <div class="flex flex-col md:flex-row justify-between items-start gap-1 mb-2">
+                                <h3 class="font-bold text-slate-900 text-[15px]">{{ exp.role }} <span *ngIf="exp.company" class="text-slate-500 font-medium ml-1">| {{ exp.company }}</span></h3>
+                                <time
+                                    class="text-xs font-bold text-red-800 uppercase tracking-wide bg-red-50 px-2 py-0.5 rounded whitespace-nowrap">{{
+                                    exp.period }}</time>
+                            </div>
+                            <p class="text-slate-400 text-xs italic mb-3">{{ exp.subtitle }}</p>
+                            <ul class="flex flex-col gap-2">
+                                <li *ngFor="let bullet of exp.achievements"
+                                    class="flex items-start gap-2 text-sm text-slate-600 leading-relaxed">
+                                    <svg width="14" height="14" class="text-red-600 mt-1 flex-shrink-0"
+                                        aria-hidden="true" focusable="false">
+                                        <use href="#cv2-icon-check" />
+                                    </svg>
+                                    <span [innerHTML]="bullet | markdown"></span>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h2
+                        class="text-lg font-bold text-slate-900 uppercase tracking-widest border-l-4 border-red-600 pl-3 mb-6">
+                        Education</h2>
+                    <div class="flex flex-col gap-6">
+                        <article *ngFor="let edu of data.education" class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-9 h-9 bg-red-50 text-red-600 rounded-md flex items-center justify-center transition hover:bg-red-600 hover:text-white">
+                                <svg width="18" height="18" aria-hidden="true" focusable="false">
+                                    <use href="#cv2-icon-grad" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">{{ edu.degree }}</h3>
+                                <p class="text-sm text-slate-600 mt-0.5">{{ edu.institution }} | {{ edu.period }}</p>
+                                <p class="text-[11px] font-bold mt-1 uppercase tracking-wide"
+                                    [ngClass]="{'text-red-800': edu.noteType === 'red', 'text-slate-400': edu.noteType === 'muted'}">
+                                    {{ edu.note }}</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Core Values & Certifications (Bottom Grid) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 print:grid-cols-2 mt-2">
+                    <!-- Core Values -->
+                    <section *ngIf="data.coreValues?.length">
+                        <h2
+                            class="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-1 mb-3">
+                            Core Values</h2>
+                        <ul class="flex flex-col gap-2 text-xs text-slate-600">
+                            <li *ngFor="let val of data.coreValues" class="flex items-center gap-2">
+                                <div class="w-1.5 h-1.5 bg-red-600 rounded-full print:bg-red-600"
+                                    style="-webkit-print-color-adjust: exact; print-color-adjust: exact;"></div>
+                                {{ val }}
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Certifications -->
+                    <section *ngIf="data.certifications?.length">
+                        <h2
+                            class="text-xs font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-1 mb-3">
+                            Certifications</h2>
+                        <ul class="flex flex-col gap-2 text-xs text-slate-600">
+                            <li *ngFor="let cert of data.certifications" [innerHTML]="cert | markdown"
+                                class="pl-2 relative before:content-['•'] before:absolute before:-left-1 before:text-slate-400">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+            </div>
+        </div>

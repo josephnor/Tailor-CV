@@ -5,11 +5,23 @@ import { CvService, CvData } from '../../services/cv';
 import { AuthService } from '../../services/auth';
 import { ToastService } from '../../services/toast.service';
 import { MarkdownPipe } from '../../pipes/markdown-pipe';
+import { CvTemplateDefault } from './templates/cv-template-default';
+import { CvTemplateElegant } from './templates/cv-template-elegant';
+import { CvTemplateBold } from './templates/cv-template-bold';
+import { CvTemplateClean } from './templates/cv-template-clean';
 
 @Component({
   selector: 'app-cv-view',
   standalone: true,
-  imports: [CommonModule, RouterModule, MarkdownPipe],
+  imports: [
+    CommonModule, 
+    RouterModule, 
+    MarkdownPipe, 
+    CvTemplateDefault, 
+    CvTemplateElegant, 
+    CvTemplateBold, 
+    CvTemplateClean
+  ],
   templateUrl: './cv-view.html',
   styleUrl: './cv-view.css'
 })

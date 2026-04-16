@@ -40,8 +40,8 @@ router.get('/:username', authenticateToken, asyncHandler(async (req, res) => {
     const items = await queryUserCvs(req.params.username);
     if (items.length === 0) return res.status(404).json({ error: 'No CVs found' });
 
-    const cvList = items.map(({ cvId, label, isDefault, createdAt, updatedAt }) => ({
-        cvId, label, isDefault: isDefault || false, createdAt, updatedAt
+    const cvList = items.map(({ cvId, label, isDefault, createdAt, updatedAt, data }) => ({
+        cvId, label, isDefault: isDefault || false, createdAt, updatedAt, template: data?.template || 'default'
     }));
     res.json(cvList);
 }));
@@ -77,7 +77,7 @@ router.post('/', authenticateToken, asyncHandler(async (req, res) => {
     let cvData = data || {
         profile: { firstName: username, lastName: '', subtitle: '', photoPath: '', summary: '', quote: '' },
         contact: { phone: '', email: '', location: '', linkedin: '', linkedinUrl: '' },
-        skills: [], languages: [], experience: [], education: [], coreValues: [], certifications: []
+        skills: [], languages: [], experience: [], education: [], coreValues: [], certifications: [], template: 'default'
     };
 
     if (cvData.profile?.photoPath?.startsWith('data:image')) {

@@ -54,6 +54,7 @@ export interface CvEducation {
 export interface CvData {
   cvId?: string;
   label?: string;
+  template?: string;
   profile: CvProfile;
   contact: CvContact;
   skills: string[];
@@ -70,6 +71,7 @@ export interface CvListItem {
   isDefault: boolean;
   createdAt: string;
   updatedAt: string;
+  template?: string;
 }
 
 @Injectable({

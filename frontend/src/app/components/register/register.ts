@@ -10,9 +10,9 @@ import { AuthService } from '../../services/auth';
   imports: [CommonModule, ReactiveFormsModule, RouterModule],
   template: `
     <div class="min-h-screen mesh-gradient flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-md w-full space-y-8 bg-slate-900 p-10 rounded-2xl shadow-2xl border border-slate-800">
-        <div>
-          <h2 class="mt-6 text-center text-3xl font-extrabold text-white">Create Your CV</h2>
+      <div class="max-w-md w-full space-y-8 bg-slate-900 p-10 rounded-2xl shadow-2xl border border-slate-800 flex flex-col items-center">
+        <div class="flex flex-col items-center">
+          <img src="/logos/tailor-cv-white.png" alt="TailorCV Logo" class="w-100 h-auto mb-2 drop-shadow-xl logo-screen-blend object-contain">
           <p class="mt-2 text-center text-sm text-slate-400">
             Join the platform and build your premium portfolio.
           </p>
